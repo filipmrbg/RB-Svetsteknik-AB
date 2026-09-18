@@ -40,15 +40,15 @@ export interface SiteImages {
 
 const images: SiteImages = {
   logo: {
-    url: '/logo.png',
+    url: '/logo.png?v=2',
     alt: 'RB Svetsteknik AB - Svets och Montage i Byske och Skellefteå',
   },
   logoDark: {
-    url: '/logo-dark.png',
+    url: '/logo-dark.png?v=2',
     alt: 'RB Svetsteknik AB - Svets och Montage',
   },
   ogImage: {
-    url: '/og-image.png',
+    url: '/og-image.png?v=2',
     alt: 'RB Svetsteknik AB Logotyp',
   },
 
