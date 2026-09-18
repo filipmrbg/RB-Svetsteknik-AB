@@ -341,7 +341,7 @@ export default function Contact() {
                     </label>
                     <textarea
                       rows={4}
-                      placeholder="Berätta om ert projekt, bergvolym, tomtförutsättningar samt önskad tidsplan..."
+                      placeholder="Berätta om ert projekt, material, ritningar samt önskad tidsplan..."
                       value={message}
                       onChange={(e) => setMessage(e.target.value)}
                       required
@@ -391,7 +391,7 @@ export default function Contact() {
           <FAQAccordion
             items={faqItems}
             title="Vanliga frågor om våra tjänster"
-            subtitle="Här har vi samlat svar på återkommande frågor kring offerter, etablering och spräng- och markarbeten."
+            subtitle="Här har vi samlat svar på återkommande frågor kring offerter, etablering och svets- och montagearbeten."
             dark={false}
           />
         </div>

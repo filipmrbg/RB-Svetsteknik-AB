@@ -4,9 +4,10 @@ import Navbar from './components/Navbar';
 import Footer from './components/Footer';
 import Home from './pages/Home';
 
+import Contact from './pages/Contact';
+import Quote from './pages/Quote';
+
 const About = lazy(() => import('./pages/About'));
-const Contact = lazy(() => import('./pages/Contact'));
-const Quote = lazy(() => import('./pages/Quote'));
 const ServicesOverview = lazy(() => import('./pages/ServicesOverview'));
 const Animations = lazy(() => import('./pages/Animations'));
 

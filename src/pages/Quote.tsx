@@ -132,7 +132,7 @@ export default function Quote() {
                   fontSize: 'clamp(1.4rem, 2.2vw, 1.8rem)',
                   margin: '0 0 8px 0',
                 }}>
-                  Beskriv ert markeringsprojekt
+                  Beskriv ert uppdrag
                 </h2>
                 <p style={{ color: 'var(--color-gray-600)', fontSize: '0.92rem', margin: '0 0 28px 0', lineHeight: 1.6 }}>
                   Vi återkopplar vanligtvis samma eller nästkommande arbetsdag.
@@ -219,7 +219,7 @@ export default function Quote() {
                     <textarea
                       required
                       rows={5}
-                      placeholder="Berätta om tomtens förutsättningar, bergvolym, adress/ort samt önskad tidsram..."
+                      placeholder="Berätta om ert projekt, material, ritningsunderlag, adress/ort samt önskad tidsram..."
                       value={message}
                       onChange={(e) => setMessage(e.target.value)}
                       style={{ ...inputStyle, resize: 'vertical' }}
@@ -348,7 +348,7 @@ export default function Quote() {
           <FAQAccordion
             items={faqItems}
             title="Vanliga frågor om offerten"
-            subtitle="Här hittar du svar på de vanligaste frågorna inför ert mark- och bergarbete."
+            subtitle="Här hittar du svar på de vanligaste frågorna inför ert svets- och montagearbete."
           />
         </div>
       </section>

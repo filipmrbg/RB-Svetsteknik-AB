@@ -122,8 +122,7 @@ export default function Navbar() {
     }
   }
 
-  const isHome = location.pathname === '/';
-  const showNavbarLogo = !isHome || scrolled;
+  const showNavbarLogo = true;
 
   return (
     <>
