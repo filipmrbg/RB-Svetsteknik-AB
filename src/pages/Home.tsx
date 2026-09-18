@@ -184,7 +184,7 @@ export default function Home() {
                   transform: 'translate(-50%, -50%)',
                   width: 'clamp(320px, 45vw, 540px)',
                   height: 'clamp(180px, 26vw, 300px)',
-                  background: 'radial-gradient(ellipse, rgba(255, 255, 255, 0.12) 0%, rgba(255, 255, 255, 0.03) 50%, transparent 75%)',
+                  background: 'radial-gradient(ellipse, rgba(252, 202, 38, 0.16) 0%, rgba(255, 255, 255, 0.04) 50%, transparent 75%)',
                   borderRadius: '50%',
                   pointerEvents: 'none',
                   filter: 'blur(35px)',
