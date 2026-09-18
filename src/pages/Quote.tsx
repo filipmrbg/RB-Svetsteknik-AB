@@ -14,15 +14,15 @@ const container: React.CSSProperties = {
 const faqItems = [
   {
     question: 'Kostar offerten något?',
-    answer: 'Nej, offert och rådgivning är alltid helt kostnadsfritt. Vi går igenom era ritningar, ytor och förutsättningar och tar fram ett tydligt prisförslag helt utan förbindelser.',
+    answer: 'Nej, offert och rådgivning är alltid helt kostnadsfritt. Vi går igenom era ritningar, specifikationer och förutsättningar och tar fram ett tydligt prisförslag helt utan förbindelser.',
   },
   {
-    question: 'Hur snabbt kan ni påbörja bergarbetet eller markarbetet?',
-    answer: 'Det beror på projektets omfattning och eventuella tillstånd eller besiktningar. Vi har stor flexibilitet och egen maskinpark på Orust, vilket gör att vi kan etablera oss snabbt över hela Bohuslän.',
+    question: 'Hur snabbt kan ni påbörja svets- eller montagearbetet?',
+    answer: 'Det beror på projektets omfattning. Vi har snabb inställelsetid och fullt utrustad mobil serviceenhet med utgångspunkt från Byske, vilket gör att vi kan etablera oss snabbt i hela Västerbotten.',
   },
   {
-    question: 'Utför ni arbeten åt både privatpersoner och företag?',
-    answer: 'Ja! Vi hjälper privatpersoner, villaägare, lantbrukare, byggentreprenörer och samfälligheter på Orust, i Uddevalla och övriga Bohuslän.',
+    question: 'Utför ni arbeten åt både företag och industri?',
+    answer: 'Ja! Vi bistår industriföretag, byggentreprenörer, fastighetsägare och privatpersoner i Byske, Skellefteå och övriga Västerbotten.',
   },
 ];
 
@@ -53,8 +53,8 @@ function blurInput(e: React.FocusEvent<HTMLInputElement | HTMLTextAreaElement | 
 
 export default function Quote() {
   usePageTitle(
-    'Begär offert | Nordisk Bergmark AB',
-    'Beskriv ert projekt och begär en kostnadsfri offert för bergsprängning, stenspräckning, markarbeten, dränering eller snöröjning på Orust och i Bohuslän.'
+    'Begär offert | RB Svetsteknik AB',
+    'Beskriv ert projekt och begär en kostnadsfri offert för svetsning, stålmontage, industriservice eller fältservice i Byske och Skellefteå.'
   );
   const [name, setName]       = useState('');
   const [email, setEmail]     = useState('');
@@ -202,12 +202,13 @@ export default function Quote() {
                       onBlur={blurInput}
                     >
                       <option value="">Välj tjänst...</option>
-                      <option value="bergsprangning">Bergsprängning</option>
-                      <option value="markarbete">Markarbeten</option>
-                      <option value="dranering">Dränering</option>
-                      <option value="snorojning">Snöröjning</option>
-                      <option value="stensprackning">Stenspräckning</option>
-                      <option value="annat">Annat mark- eller bergarbete</option>
+                      <option value="svetsning">Alla typer av svetsning</option>
+                      <option value="stalmontage">Stålmontage</option>
+                      <option value="industriservice">Industriservice</option>
+                      <option value="faltservice">Fältservice</option>
+                      <option value="byggsmide">Byggsmide</option>
+                      <option value="iws">IWS Support</option>
+                      <option value="annat">Annat arbete</option>
                     </select>
                   </div>
 
@@ -273,10 +274,10 @@ export default function Quote() {
                     fontSize: '1.4rem',
                     margin: '0 0 16px 0',
                   }}>
-                    Varför välja Nordisk Bergmark AB?
+                    Varför välja RB Svetsteknik AB?
                   </h3>
                   <p style={{ color: 'var(--color-gray-600)', fontSize: '0.96rem', lineHeight: 1.7, margin: 0 }}>
-                    Vi kombinerar gedigen yrkeskompetens med moderna borriggar, säkra metoder och högsta precision.
+                    Vi kombinerar gedigen yrkeskompetens med moderna svetsmetoder, mobil fältservice och högsta precision.
                   </p>
                 </div>
 
@@ -284,18 +285,18 @@ export default function Quote() {
                   {[
                     {
                       icon: ShieldCheck,
-                      title: 'Certifierad säkerhet',
-                      desc: 'Full behörighet för bergsprängning med riskanalyser och säkra vibrationsmätningar.',
+                      title: 'Certifierad svetskompetens',
+                      desc: 'IWS-support, certifierade svetsare och full efterlevnad av gällande standarder och kvalitetskrav.',
                     },
                     {
                       icon: Clock,
                       title: 'Snabba besked & tidsplan',
-                      desc: 'Kostnadsfri offert inom 24 timmar och punktlig leverans enligt överenskommelse.',
+                      desc: 'Kostnadsfri offert inom 24 timmar, flexibel fältservice och punktlig leverans enligt överenskommelse.',
                     },
                     {
                       icon: Award,
-                      title: 'Lokal expertis i Bohuslän',
-                      desc: 'Gedigen erfarenhet av bohuslänska mark- och bergförhållanden med utgångspunkt från Orust.',
+                      title: 'Lokal expertis i Västerbotten',
+                      desc: 'Gedigen erfarenhet av industri, bygg och montage med utgångspunkt från Byske och Skellefteå.',
                     },
                   ].map(({ icon: Icon, title, desc }, i) => (
                     <div

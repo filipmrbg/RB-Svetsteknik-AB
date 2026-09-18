@@ -1,5 +1,5 @@
 /**
- * CENTRALIZED IMAGE CONFIGURATION - NORDISK BERGMARK AB
+ * CENTRALIZED IMAGE CONFIGURATION - RB SVETSTEKNIK AB
  *
  * All images used across the site are defined here.
  */
@@ -41,135 +41,147 @@ export interface SiteImages {
 const images: SiteImages = {
   logo: {
     url: '/logo.png',
-    alt: 'Nordisk Bergmark AB - Bergsprängning, stenspräckning och markarbeten på Orust och i Bohuslän',
+    alt: 'RB Svetsteknik AB - Svets och Montage i Byske och Skellefteå',
   },
   logoDark: {
     url: '/logo-dark.png',
-    alt: 'Nordisk Bergmark AB',
+    alt: 'RB Svetsteknik AB - Svets och Montage',
   },
   ogImage: {
     url: '/og-image.png',
-    alt: 'Nordisk Bergmark AB Logotyp',
+    alt: 'RB Svetsteknik AB Logotyp',
   },
 
   hero: {
     background: {
-      url: '/hero-main.webp',
-      alt: 'Nordisk Bergmark AB professionella markarbeten, bergsprängning och schaktning',
+      url: '/gallery/gallery-4.jpg',
+      alt: 'RB Svetsteknik AB professionell svetsning, stålmontage och industriservice i Västerbotten',
     },
-    videoUrl: 'https://d8j0ntlcm91z4.cloudfront.net/user_3G5LlmMYORSdAk8SxzXrK2S0Is5/hf_20260918_142212_05bae687-470d-442c-a0d8-78c8ac61ca86.mp4',
+    videoUrl: '/hero-video.mp4',
   },
 
   services: {
-    'bergsprangning': {
+    'svetsning': {
       url: '/gallery/gallery-3.jpg',
-      alt: 'Bergsprängning och stenspräckning på Orust och i Bohuslän',
+      alt: 'Certifierad svetsning i stål, rostfritt och aluminium - RB Svetsteknik AB',
     },
-    'markarbete': {
-      url: '/gallery/gallery-1.jpg',
-      alt: 'Markarbete och grävning för fastigheter och tomter',
+    'stalmontage': {
+      url: '/gallery/gallery-5.jpg',
+      alt: 'Stålmontage och byggsmide för hallar och industri - RB Svetsteknik AB',
     },
-    'dranering': {
-      url: '/service-dranering.webp',
-      alt: 'Husdränering och dagvattenledningar',
+    'industriservice': {
+      url: '/gallery/gallery-4.jpg',
+      alt: 'Industriservice, slitplåtsbyten och maskinreparationer - RB Svetsteknik AB',
     },
-    'snorojning': {
-      url: '/service-snorojning.jpg',
-      alt: 'Snöröjning, snöplogning och halkbekämpning i Bohuslän',
+    'faltservice': {
+      url: '/gallery/gallery-2.jpg',
+      alt: 'Mobil fältservice och IWS svetsansvarig support på plats i Västerbotten',
     },
   },
 
   gallery: [
     {
       url: '/gallery/gallery-1.jpg',
-      alt: 'Bandgrävare Volvo under markberedning och tomtplanering',
+      alt: 'Specialtillverkning i rostfritt stål och montagekomponenter',
     },
     {
       url: '/gallery/gallery-2.jpg',
-      alt: 'Minigrävare vid stenspräckning och bergsschakt intill villa',
+      alt: 'Mobil fältservice och maskinservice i fält',
     },
     {
       url: '/gallery/gallery-3.jpg',
-      alt: 'Bergsprängning med sprängmattor på skärgårdstomt i Bohuslän',
+      alt: 'Precisionssvetsad rörfog och licenssvetsning med hög genombränning',
     },
     {
       url: '/gallery/gallery-4.jpg',
-      alt: 'Precisionssprängning under sprängmattor',
+      alt: 'Tung industriservice och reparation med vinkelslip och svets',
     },
     {
-      url: '/about.jpg',
-      alt: 'Atlas Copco borrigg för bergborrning Nordisk Bergmark AB',
+      url: '/gallery/gallery-5.jpg',
+      alt: 'Montage av bärande stålbalkar och pelare i industrilokal',
+    },
+    {
+      url: '/gallery/gallery-6.jpg',
+      alt: 'Stomresning och bärande stålkonstruktion med mobilkran',
     },
   ],
 
   cta: {
     banner: {
-      url: '/gallery/gallery-3.jpg',
-      alt: 'Nordisk Bergmark AB bergsprängning och markarbete',
+      url: '/gallery/gallery-5.jpg',
+      alt: 'RB Svetsteknik AB stålmontage och svetsarbeten',
     },
     midSection: {
-      url: '/gallery/gallery-2.jpg',
-      alt: 'Nordisk Bergmark AB schakt och stenspräckning',
+      url: '/gallery/gallery-6.jpg',
+      alt: 'RB Svetsteknik AB stomresning och stålkonstruktioner',
     },
   },
 
   about: {
     hero: {
       url: '/about.jpg',
-      alt: 'Nordisk Bergmark AB borrigg och maskinpark på Orust och i Bohuslän',
+      alt: 'RB Svetsteknik AB Svets och Montage i Byske och Skellefteå',
     },
   },
 
   whyChooseUs: {
-    url: '/gallery/gallery-1.jpg',
-    alt: 'Professionella markarbeten med modern maskinpark - Nordisk Bergmark AB',
+    url: '/gallery/gallery-3.jpg',
+    alt: 'Certifierat svetsarbete med IWS specialistkompetens - RB Svetsteknik AB',
   },
 
   ideaToResult: {
-    url: '/gallery/gallery-3.jpg',
-    alt: 'Från berg och råmark till färdig tomt i Bohuslän',
+    url: '/gallery/gallery-1.jpg',
+    alt: 'Från ritning och tillskärning till färdigmonterat stål i Västerbotten',
   },
 
   portfolio: [
     {
       image: {
-        url: '/gallery/gallery-3.jpg',
-        alt: 'Bergsprängning för nybyggnation på havstomt i Bohuslän',
+        url: '/gallery/gallery-1.jpg',
+        alt: 'Specialtillverkning och svetsning av fästelement i rostfritt stål',
       },
-      title: 'Bergsprängning Havstomt',
-      category: 'Bergsprängning',
+      title: 'Specialtillverkning i Rostfritt',
+      category: 'Industriservice & Smide',
     },
     {
       image: {
         url: '/gallery/gallery-2.jpg',
-        alt: 'Skonsam stenspräckning intill befintlig villa och trädgård',
+        alt: 'Fältservice och mekaniskt underhåll på plats i gruvindustrin',
       },
-      title: 'Stenspräckning Villa',
-      category: 'Stenspräckning',
+      title: 'Fältservice & Gruvindustri',
+      category: 'Fältservice & Montage',
     },
     {
       image: {
-        url: '/gallery/gallery-1.jpg',
-        alt: 'Tomtplanering och grundschaktning på Orust',
+        url: '/gallery/gallery-3.jpg',
+        alt: 'Precisionssvetsning och rörsvetsning med perfekt finish och genombränning',
       },
-      title: 'Markarbete & Tomtplanering',
-      category: 'Markarbeten',
-    },
-    {
-      image: {
-        url: '/about.jpg',
-        alt: 'Borrning i granit med modern bandburen borrigg',
-      },
-      title: 'Bergborrning med Borrigg',
-      category: 'Bergborrning',
+      title: 'Precisionssvetsning & Rörsvets',
+      category: 'Svetsarbeten',
     },
     {
       image: {
         url: '/gallery/gallery-4.jpg',
-        alt: 'Säker bergsprängning under sprängmattor',
+        alt: 'Akut reparation och underhåll av tung industriutrustning',
       },
-      title: 'Precisionssprängning Berg',
-      category: 'Bergarbeten',
+      title: 'Tung Industriservice & Reparation',
+      category: 'Industriservice',
+    },
+    {
+      image: {
+        url: '/gallery/gallery-5.jpg',
+        alt: 'Stålmontage och balkkonstruktioner i industrilokal och verkstad',
+      },
+      title: 'Stålmontage i Industrilokal',
+      category: 'Stålmontage & Byggsmide',
+    },
+    {
+      image: {
+        url: '/gallery/gallery-6.jpg',
+        alt: 'Stomresning av bärande stålpelare och fackverk med mobilkran',
+      },
+      title: 'Bärande Stålkonstruktion & Stomresning',
+      category: 'Stålmontage',
     },
   ],
 };

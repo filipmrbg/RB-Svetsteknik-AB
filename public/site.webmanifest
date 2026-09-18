@@ -1,11 +1,11 @@
 {
-  "name": "Nordisk Bergmark AB",
-  "short_name": "Nordisk Bergmark",
-  "description": "Professionell bergsprängning, stenspräckning och markarbeten på Orust och i hela Bohuslän.",
+  "name": "RB Svetsteknik AB",
+  "short_name": "RB Svetsteknik",
+  "description": "Professionell svetsning, stålmontage, industriservice, fältservice och byggsmide i Byske och Skellefteå.",
   "start_url": "/",
   "display": "standalone",
   "background_color": "#0f172a",
-  "theme_color": "#eab308",
+  "theme_color": "#0f172a",
   "icons": [
     {
       "src": "/favicon.png",

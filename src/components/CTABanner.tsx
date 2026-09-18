@@ -10,13 +10,13 @@ interface Props {
 
 const defaultHeading = 'Begär en kostnadsfri offert';
 const defaultCheckItems = [
-  'Kostnadsfri rådgivning och platsbesök',
+  'Kostnadsfri rådgivning och teknisk genomgång',
   'Snabb återkoppling inom 24 timmar',
-  'Verksamma i Orust, Uddevalla och hela Bohuslän',
+  'Verksamma i Byske, Skellefteå och hela Västerbotten',
 ];
 
 export default function CTABanner({ heading = defaultHeading, checkItems = defaultCheckItems }: Props) {
-  const bgImage = images.cta?.banner?.url || '/cta-banner-bg.jpg';
+  const bgImage = images.cta?.banner?.url || '/gallery/gallery-5.jpg';
 
   return (
     <section style={{ 
@@ -25,10 +25,10 @@ export default function CTABanner({ heading = defaultHeading, checkItems = defau
       overflow: 'hidden',
       padding: 'clamp(70px, 9vw, 95px) 0',
     }}>
-      {/* Background Image: Nordisk Bergmark machinery */}
+      {/* Background Image: RB Svetsteknik stålmontage */}
       <img
         src={bgImage}
-        alt="Nordisk Bergmark AB maskiner och utrustning"
+        alt="RB Svetsteknik AB stålmontage och svetsning"
         loading="lazy"
         decoding="async"
         style={{

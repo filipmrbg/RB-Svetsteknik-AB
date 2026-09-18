@@ -346,7 +346,7 @@ export default function Navbar() {
             }}
           >
             <a
-              href="tel:0722107582"
+              href="tel:0704877670"
               style={{
                 display: 'flex',
                 alignItems: 'center',
@@ -363,7 +363,7 @@ export default function Navbar() {
               onMouseLeave={e => (e.currentTarget.style.opacity = '1')}
             >
               <Phone size={14} color="#ffffff" />
-              <span>072-210 75 82</span>
+              <span>070-487 76 70</span>
             </a>
           </div>
 
@@ -564,8 +564,8 @@ export default function Navbar() {
             Ring oss direkt:
           </span>
           <div style={{ display: 'flex', flexDirection: 'column', gap: '8px', alignItems: 'center' }}>
-            <a href="tel:0722107582" style={{ color: 'var(--color-white)', fontWeight: 600, fontSize: '0.95rem', textDecoration: 'none', display: 'inline-flex', alignItems: 'center', gap: '6px' }}>
-              <Phone size={14} color="#ffffff" /> 072-210 75 82
+            <a href="tel:0704877670" style={{ color: 'var(--color-white)', fontWeight: 600, fontSize: '0.95rem', textDecoration: 'none', display: 'inline-flex', alignItems: 'center', gap: '6px' }}>
+              <Phone size={14} color="#ffffff" /> 070-487 76 70
             </a>
           </div>
         </div>

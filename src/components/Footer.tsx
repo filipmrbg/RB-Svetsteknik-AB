@@ -1,11 +1,10 @@
 import { Link, useLocation, useNavigate } from 'react-router-dom';
-import { Instagram, Facebook, Mail, Phone, MapPin } from 'lucide-react';
+import { Instagram, Mail, Phone, MapPin } from 'lucide-react';
 import images from '../data/images';
 import services from '../data/services';
 
 const socialIcons = [
-  { Icon: Instagram, label: 'Instagram', href: 'https://www.instagram.com/nordiskbergmark/' },
-  { Icon: Facebook, label: 'Facebook', href: 'https://www.facebook.com/p/Nordisk-Berg-Mark-AB-61580709239263/' },
+  { Icon: Instagram, label: 'Instagram', href: 'https://www.instagram.com/rbsvetsteknik' },
 ];
 
 export default function Footer() {
@@ -27,7 +26,7 @@ export default function Footer() {
       <div style={{ maxWidth: 'var(--container-max)', margin: '0 auto', padding: '80px clamp(20px, 5vw, 40px) 0' }}>
         <div className="footer-grid" style={{
           display: 'grid',
-          gridTemplateColumns: '1fr 1fr 1fr',
+          gridTemplateColumns: '1.2fr 1fr 1fr',
           gap: '40px',
         }}>
           <div>
@@ -40,18 +39,17 @@ export default function Footer() {
                     src={images.logoDark?.url || '/logo-dark.png'}
                     alt={images.logoDark?.alt || images.logo.alt}
                     style={{
-                      height: '70px',
+                      height: '62px',
                       width: 'auto',
                       display: 'block',
                       objectFit: 'contain',
-                      borderRadius: '6px',
                     }}
                   />
                 </div>
               </Link>
             </div>
-            <p style={{ color: 'var(--color-gray-600)', fontSize: '0.9rem', lineHeight: 1.7, margin: '0 0 20px 0' }}>
-              Nordisk Bergmark AB är specialister på bergsprängning, stenspräckning, bergborrning, schaktning och dränering. Vi utgår från Orust och utför kvalitetsarbeten över hela Bohuslän.
+            <p style={{ color: 'var(--color-gray-600)', fontSize: '0.9rem', lineHeight: 1.7, margin: '0 0 20px 0', maxWidth: '360px' }}>
+              RB Svetsteknik AB är er pålitliga partner för alla typer av svetsning, stålmontage, industriservice, fältservice och byggsmide. Vi utgår från Byske och betjänar hela Skellefteåregionen och Västerbotten.
             </p>
             <div style={{ display: 'flex', gap: '12px' }}>
               {socialIcons.map(({ Icon, label, href }) => (
@@ -124,23 +122,23 @@ export default function Footer() {
             <div style={{ display: 'flex', flexDirection: 'column', gap: '10px', fontSize: '0.95rem' }}>
 
               <a
-                href="mailto:Nordiskbergmark@gmail.com"
+                href="mailto:info@rb-svetsteknik.se"
                 className="footer-contact-item"
               >
                 <div className="footer-contact-icon">
                   <Mail size={16} strokeWidth={2} />
                 </div>
-                <span>Nordiskbergmark@gmail.com</span>
+                <span>info@rb-svetsteknik.se</span>
               </a>
 
               <a
-                href="tel:0722107582"
+                href="tel:0704877670"
                 className="footer-contact-item"
               >
                 <div className="footer-contact-icon">
                   <Phone size={16} strokeWidth={2} />
                 </div>
-                <span>072-210 75 82</span>
+                <span>070-487 76 70</span>
               </a>
 
               <div
@@ -149,7 +147,7 @@ export default function Footer() {
                 <div className="footer-contact-icon">
                   <MapPin size={16} strokeWidth={2} />
                 </div>
-                <span>Orust • Uddevalla • Bohuslän</span>
+                <span>Byske • Skellefteå • Västerbotten</span>
               </div>
             </div>
           </div>
@@ -171,8 +169,8 @@ export default function Footer() {
           }}
         >
           <div style={{ display: 'flex', gap: '16px', alignItems: 'center', color: 'var(--color-gray-600)', fontSize: '0.875rem', flexWrap: 'wrap' }}>
-            <span>© 2026 - Nordisk Bergmark AB</span>
-            <span>Org.nr: 559547-7760</span>
+            <span>© 2026 - RB Svetsteknik AB</span>
+            <span>Org.nr: 559364-2050</span>
             <span>Godkänd för F-skatt</span>
           </div>
         </div>

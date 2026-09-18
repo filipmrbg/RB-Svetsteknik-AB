@@ -27,48 +27,48 @@ const container: React.CSSProperties = {
 const homeFaqItems = [
   {
     question: 'Kostar det något att få en offert?',
-    answer: 'Nej, vi erbjuder alltid kostnadsfria offerter och teknisk rådgivning helt utan förbindelser för alla typer av bergarbeten och markentreprenader.',
+    answer: 'Nej, vi erbjuder alltid kostnadsfria offerter och teknisk rådgivning helt utan förbindelser för alla typer av svets- och montagearbeten.',
   },
   {
     question: 'Vilket geografiskt område jobbar ni i?',
-    answer: 'Nordisk Bergmark AB utgår från Orust men utför arbeten i Uddevalla, Tjörn, Stenungsund, Lysekil och över hela Bohuslän samt närliggande delar av Västra Götaland.',
+    answer: 'RB Svetsteknik AB utgår från Byske och utför svetsning, stålmontage och industriservice i Skellefteå, Kåge, Piteå och över hela Västerbotten samt angränsande regioner.',
   },
   {
-    question: 'Vad är skillnaden mellan bergsprängning och stenspräckning?',
-    answer: 'Bergsprängning används vid större bergvolymer och tomtschaktning med täckning av tunga sprängmattor. Stenspräckning (hydraulisk eller patronbaserad) är en skonsam, vibrationsfri metod som lämpar sig optimalt tätt intill befintliga husgrunder, ledningar och känslig bebyggelse.',
+    question: 'Vilka svetsmetoder behärskar ni?',
+    answer: 'Vi är certifierade inom TIG, MIG/MAG och MMA (pinnsvetsning) och arbetar med olegerat stål, rostfria legeringar, syrafast och aluminium.',
   },
   {
-    question: 'Hjälper ni till med besiktning och tillstånd vid bergsprängning?',
-    answer: 'Ja, vi samordnar nödvändiga tillstånd, riskanalyser, förbesiktning av närliggande fastigheter och vibrationsmätning så att hela entreprenaden sker tryggt och enligt gällande regelverk.',
+    question: 'Vad innebär er IWS support för företag?',
+    answer: 'Som diplomerad International Welding Specialist (IWS) erbjuder vi svetssamordning, svetsprocedurer (WPS/WPQR) och teknisk kvalitetssäkring enligt EN ISO 3834 och EN 1090.',
   },
   {
-    question: 'Erbjuder ni även dränering, grävning och snöröjning?',
-    answer: 'Absolut. Utöver bergsprängning och bergborrning utför vi kompletta markarbeten som husgrunder, tomtplanering, schakt och dränering, samt snöröjning under vintern.',
+    question: 'Har ni mobil fältservice för akuta reparationer?',
+    answer: 'Ja, med vår fullt utrustade servicebuss och eget elverk kan vi rycka ut snabbt och utföra reparationer, svetsning och underhåll direkt på er arbetsplats eller i bergtäkten.',
   },
 ];
 
 const homeReviews = [
   {
     name: 'Johan E.',
-    location: 'Orust',
-    authorSub: 'Orust, Bohuslän',
-    text: 'Anlitade Nordisk Bergmark för bergsprängning och schaktning inför vårt husbygge på Orust. Otroligt professionellt genomfört med full koll på besiktning och vibrationer mot grannfastigheterna. Rekommenderas varmt!',
+    location: 'Skellefteå',
+    authorSub: 'Skellefteå, Västerbotten',
+    text: 'Anlitade RB Svetsteknik för stålmontage och avväxlingsbalkar i samband med vår industribyggnad i Skellefteå. Mycket professionellt genomfört, exakta mått och ett felfritt montage från start till mål. Rekommenderas starkt!',
     stars: 5,
     date: '1 månad sedan',
   },
   {
     name: 'Karin M.',
-    location: 'Uddevalla',
-    authorSub: 'Uddevalla, Bohuslän',
-    text: 'Fick hjälp med dränering runt källaren och stenspräckning av bergsklackar på tomten. Arbetet utfördes snabbt, noggrant och tomten lämnades i toppskick. Mycket trevligt och pålitligt bemötande genom hela projektet.',
+    location: 'Byske',
+    authorSub: 'Byske, Västerbotten',
+    text: 'Fick snabb och suverän hjälp med rörsvetsning och specialtillverkade fästen i rostfritt stål. Otrolig precision på svetsfogarna och ett mycket trevligt bemötande. Rachid och teamet kan verkligen sitt hantverk.',
     stars: 5,
     date: '2 månader sedan',
   },
   {
     name: 'Markus L.',
-    location: 'Tjörn',
-    authorSub: 'Tjörn, Bohuslän',
-    text: 'Grymt duktiga och pålitliga hantverkare! De borrade och spräckte bort berget intill vår befintliga altan helt utan skador på omgivningen. Punktliga, moderna maskiner och ett riktigt snyggt slutresultat.',
+    location: 'Kåge',
+    authorSub: 'Kåge, Västerbotten',
+    text: 'Toppklass på fältservicen! De ryckte ut med servicebussen direkt till vår krossanläggning och utförde reparationer och slitplåtsbyte på plats. Sparade oss massor av tid och driftstopp. Oerhört pålitliga.',
     stars: 5,
     date: '3 veckor sedan',
   },
@@ -76,8 +76,8 @@ const homeReviews = [
 
 export default function Home() {
   usePageTitle(
-    'Nordisk Bergmark AB | Bergsprängning & Markarbeten i Bohuslän',
-    'Nordisk Bergmark AB utför professionell bergsprängning, bergborrning, stenspräckning, dränering och markarbeten på Orust, i Uddevalla och hela Bohuslän. Fri offert!'
+    'RB Svetsteknik AB | Svetsning & Stålmontage i Byske & Skellefteå',
+    'RB Svetsteknik AB utför certifierad svetsning, stålmontage, industriservice, fältservice och byggsmide i Byske, Skellefteå och hela Västerbotten. Fri offert!'
   );
 
   const heroBgRef = useRef<HTMLDivElement>(null);
@@ -132,6 +132,7 @@ export default function Home() {
             loop
             playsInline
             preload="auto"
+            poster={images.hero.background.url}
             style={{
               width: '100%',
               height: '100%',
@@ -170,7 +171,8 @@ export default function Home() {
             {/* ── HERO LOGO: The dominant visual centrepiece ── */}
             <ScrollReveal animation="fade-down" delay={0} duration={0.9}>
               <div style={{
-                marginBottom: '18px',
+                marginTop: 'clamp(-40px, -4.5vh, -20px)',
+                marginBottom: 'clamp(24px, 3.2vh, 36px)',
                 display: 'flex',
                 justifyContent: 'center',
                 position: 'relative',
@@ -181,21 +183,21 @@ export default function Home() {
                   top: '50%',
                   left: '50%',
                   transform: 'translate(-50%, -50%)',
-                  width: 'clamp(200px, 28vw, 300px)',
-                  height: 'clamp(200px, 28vw, 300px)',
-                  background: 'radial-gradient(circle, rgba(255, 255, 255, 0.10) 0%, rgba(255, 255, 255, 0.03) 45%, transparent 70%)',
+                  width: 'clamp(320px, 45vw, 540px)',
+                  height: 'clamp(180px, 26vw, 300px)',
+                  background: 'radial-gradient(ellipse, rgba(255, 255, 255, 0.12) 0%, rgba(255, 255, 255, 0.03) 50%, transparent 75%)',
                   borderRadius: '50%',
                   pointerEvents: 'none',
-                  filter: 'blur(30px)',
+                  filter: 'blur(35px)',
                 }} />
                 <img
                   src={images.logo.url}
                   alt={images.logo.alt}
                   style={{
-                    width: 'clamp(160px, 18vw, 220px)',
+                    width: 'clamp(280px, 38vw, 480px)',
                     height: 'auto',
                     display: 'block',
-                    filter: 'drop-shadow(0 10px 36px rgba(0, 0, 0, 0.9)) drop-shadow(0 4px 12px rgba(0, 0, 0, 0.7))',
+                    filter: 'drop-shadow(0 12px 40px rgba(0, 0, 0, 0.95)) drop-shadow(0 4px 14px rgba(0, 0, 0, 0.75))',
                     position: 'relative',
                     zIndex: 1,
                   }}
@@ -227,7 +229,7 @@ export default function Home() {
                 margin: '0 0 12px 0',
                 textShadow: '0 4px 24px rgba(0, 0, 0, 0.85)',
               }}>
-                Bergsprängning & Markarbeten i Bohuslän
+                Svetsning, Stålmontage & Industriservice
               </h1>
             </ScrollReveal>
 
@@ -238,13 +240,13 @@ export default function Home() {
                 color: 'rgba(255, 255, 255, 0.85)',
                 fontSize: 'clamp(0.92rem, 1.1vw, 1.05rem)',
                 lineHeight: 1.6,
-                maxWidth: '580px',
+                maxWidth: '620px',
                 margin: '0 auto 24px auto',
                 textShadow: '0 2px 12px rgba(0, 0, 0, 0.7)',
                 fontWeight: 400,
                 letterSpacing: '0.01em',
               }}>
-                Vi utgår från Orust och utför bergborrning, stenspräckning, bergsprängning, schaktning och dränering i Uddevalla och över hela Bohuslän.
+                RB Svetsteknik AB levererar certifierade svetsarbeten, bärande stålkonstruktioner, fältservice och byggsmide i Byske, Skellefteå och hela Västerbotten.
               </p>
             </ScrollReveal>
 
@@ -269,7 +271,7 @@ export default function Home() {
                 <Button
                   variant="outline"
                   size="lg"
-                  href="tel:0722107582"
+                  href="tel:0704877670"
                   onClick={(e) => {
                     if (window.innerWidth > 768) {
                       e.preventDefault();
@@ -279,7 +281,7 @@ export default function Home() {
                 >
                   <span style={{ display: 'inline-flex', alignItems: 'center', gap: '8px' }}>
                     <Phone size={16} />
-                    072-210 75 82
+                    070-487 76 70
                   </span>
                 </Button>
               </div>
@@ -336,7 +338,7 @@ export default function Home() {
                   margin: 0,
                   lineHeight: 1.18,
                 }}>
-                  Mark- och bergarbeten med högsta precision
+                  Kvalificerade svets- och smidesarbeten
                 </h2>
               </ScrollReveal>
             </div>
@@ -349,7 +351,7 @@ export default function Home() {
                   lineHeight: 1.65,
                   margin: '0 0 12px 0',
                 }}>
-                  Från bergsprängning och stenspräckning till schaktning, dränering och snöröjning på Orust och i hela Bohuslän.
+                  Från avancerad licenssvetsning och stålmontage till industriservice och mobil fältservice i Byske och hela Skellefteåregionen.
                 </p>
                 <Link
                   to="/tjanster"
@@ -440,7 +442,7 @@ export default function Home() {
               }}>
                 <img
                   src={images.about.hero.url}
-                  alt="Nordisk Bergmark AB verksamhet och maskinpark"
+                  alt="RB Svetsteknik AB servicebil och mobil fältservice"
                   style={{
                     width: '100%',
                     height: '100%',
@@ -462,7 +464,7 @@ export default function Home() {
                   lineHeight: 1.2,
                   margin: '0 0 14px 0',
                 }}>
-                  Er trygga partner för berg och mark i Bohuslän
+                  Er trygga partner för svets och stålmontage i Västerbotten
                 </h2>
               </ScrollReveal>
               <ScrollReveal animation="scale-x-left" delay={200} duration={0.6}>
@@ -475,16 +477,16 @@ export default function Home() {
                   lineHeight: 1.75,
                   margin: '0 0 32px 0',
                 }}>
-                  Nordisk Bergmark AB är experter på bergsprängning, bergborrning, stenspräckning och markarbeten. Med bas på Orust verkar vi över hela Bohuslän och hjälper privatpersoner, byggföretag och fastighetsägare med allt från tomtplanering och bergschakt till husgrunder, dränering och snöröjning. Med modern maskinpark och högsta säkerhetsfokus levererar vi hållbara lösningar anpassade efter varje markförhållande.
+                  RB Svetsteknik AB är specialister på alla typer av svetsning, bärande stålmontage, industriservice, fältservice och byggsmide. Med bas i Byske verkar vi över hela Skellefteå och Västerbotten och hjälper industrier, byggentreprenörer och fastighetsägare med allt från stomresning och balkmontage till rörsvetsning, maskinreparationer och IWS svetssamordning. Med hög yrkesskicklighet och certifierad kompetens levererar vi hållbara stållösningar av högsta kvalitet.
                 </p>
               </ScrollReveal>
               <ScrollReveal animation="fade-right" duration={0.8} delay={200}>
                 <div style={{ display: 'flex', flexDirection: 'column', gap: '16px' }}>
                   {[
-                    'Säker bergsprängning och vibrationsfri stenspräckning',
-                    'Moderna borriggar och grävmaskiner för alla markförhållanden',
-                    'Lokal närvaro på Orust, i Uddevalla och över hela Bohuslän',
-                    'Kompletta helhetslösningar från bergschakt till färdig tomt',
+                    'Certifierad svetsning inom TIG, MIG/MAG och MMA',
+                    'Bärande stålmontage och kundanpassat byggsmide',
+                    'Mobil fältservice med eget elverk och utrustning',
+                    'Diplomerad IWS svetssamordnare och kvalitetsstyrning',
                   ].map((item, i) => (
                     <div key={i} style={{ display: 'flex', alignItems: 'center', gap: '12px' }}>
                       <CheckCircle2 size={22} color="#0F172A" style={{ flexShrink: 0 }} />
@@ -533,7 +535,7 @@ export default function Home() {
               fontSize: 'clamp(1.8rem, 3vw, 2.6rem)',
               margin: '0 0 12px 0',
             }}>
-              Behöver ni bergsprängning eller markarbeten?
+              Behöver ni professionell svetsning eller stålmontage?
             </h2>
             <p style={{
               color: 'rgba(255,255,255,0.7)',
@@ -541,7 +543,7 @@ export default function Home() {
               margin: '0 0 32px 0',
               lineHeight: 1.7,
             }}>
-              Vi återkopplar med kostnadsfri offert och rådgivning inför ert projekt på Orust, i Uddevalla eller övriga Bohuslän.
+              Vi återkopplar med kostnadsfri offert och teknisk rådgivning inför ert projekt i Byske, Skellefteå eller övriga Västerbotten.
             </p>
             <Button variant="white" size="lg" href="/offert">
               Begär offert
@@ -592,7 +594,7 @@ export default function Home() {
                 margin: '0 auto',
                 lineHeight: 1.6,
               }}>
-                Nöjda kunder i Orust, Uddevalla och övriga Bohuslän är vårt bästa kvitto på noggrant utförda mark- och bergarbeten.
+                Nöjda kunder i Byske, Skellefteå och övriga Västerbotten är vårt bästa kvitto på noggrant utförda svets- och smidesarbeten.
               </p>
             </div>
           </ScrollReveal>
@@ -635,7 +637,7 @@ export default function Home() {
           <FAQAccordion
             items={homeFaqItems}
             title="Vanliga frågor"
-            subtitle="Här hittar du svar på vanliga funderingar kring bergsprängning, stenspräckning, markarbeten och hur vi arbetar över hela Bohuslän."
+            subtitle="Här hittar du svar på vanliga funderingar kring svetsning, stålmontage, fältservice och hur vi arbetar över hela Västerbotten."
             buttonText="Kontakta oss direkt"
             buttonLink="/kontakt"
             dark={true}

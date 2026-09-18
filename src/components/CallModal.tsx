@@ -10,10 +10,10 @@ export default function CallModal({ isOpen, onClose }: CallModalProps) {
 
   const contacts = [
     {
-      name: 'Nordisk Bergmark AB',
-      role: 'Arbetsledning & Offert',
-      phone: '072-210 75 82',
-      tel: 'tel:0722107582',
+      name: 'Rachid Benjo',
+      role: 'VD / Svets & Montage',
+      phone: '070-487 76 70',
+      tel: 'tel:0704877670',
     },
   ];
 
@@ -104,7 +104,7 @@ export default function CallModal({ isOpen, onClose }: CallModalProps) {
               fontFamily: 'var(--font-heading)',
             }}
           >
-            Ring Nordisk Bergmark AB
+            Ring RB Svetsteknik AB
           </h2>
           <p style={{ fontSize: '0.9rem', color: '#64748b', margin: 0, lineHeight: 1.5 }}>
             Kontakta oss direkt för rådgivning, frågor och kostnadsfri offert.
