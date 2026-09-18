@@ -167,6 +167,42 @@ export default function Home() {
             paddingTop: '0',
             paddingBottom: '10px',
           }}>
+            {/* ── HERO LOGO: The dominant visual centrepiece ── */}
+            <ScrollReveal animation="fade-down" delay={0} duration={0.9}>
+              <div style={{
+                marginTop: 'clamp(-40px, -4.5vh, -20px)',
+                marginBottom: 'clamp(24px, 3.2vh, 36px)',
+                display: 'flex',
+                justifyContent: 'center',
+                position: 'relative',
+              }}>
+                {/* Ambient glow behind logo */}
+                <div style={{
+                  position: 'absolute',
+                  top: '50%',
+                  left: '50%',
+                  transform: 'translate(-50%, -50%)',
+                  width: 'clamp(320px, 45vw, 540px)',
+                  height: 'clamp(180px, 26vw, 300px)',
+                  background: 'radial-gradient(ellipse, rgba(255, 255, 255, 0.12) 0%, rgba(255, 255, 255, 0.03) 50%, transparent 75%)',
+                  borderRadius: '50%',
+                  pointerEvents: 'none',
+                  filter: 'blur(35px)',
+                }} />
+                <img
+                  src={images.logo.url}
+                  alt={images.logo.alt}
+                  style={{
+                    width: 'clamp(280px, 38vw, 480px)',
+                    height: 'auto',
+                    display: 'block',
+                    filter: 'drop-shadow(0 12px 40px rgba(0, 0, 0, 0.95)) drop-shadow(0 4px 14px rgba(0, 0, 0, 0.75))',
+                    position: 'relative',
+                    zIndex: 1,
+                  }}
+                />
+              </div>
+            </ScrollReveal>
 
             {/* ── Headline ── */}
             <ScrollReveal animation="fade-up" delay={200} duration={0.8}>
